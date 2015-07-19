@@ -4,9 +4,10 @@ var Schema = mongoose.Schema;
 var TimerSchema = new Schema({
     name: String,
     roundNo: Number,
-    duration: Number,
+    startDate: Date,
     startTime: Date,
-    active: Boolean
+    duration: Number,
+    isActive: Boolean
 });
 
 module.exports = mongoose.model('Timer', TimerSchema);
