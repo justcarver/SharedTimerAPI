@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 var TimerSchema = new Schema({
     name: String,
     roundNo: Number,
-    startDate: Date,
-    startTime: Date,
+    startDate: String,
+    startTime: String,
     duration: Number,
     isActive: Boolean
 });
